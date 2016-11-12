@@ -40,3 +40,25 @@
 
   @return $leading;
 }
+
+
+
+@function button-border($hover: false) {
+  $border: $button-border-width $button-border-style;
+  @if $hover == true {
+    $border: $border $button-hover-border-color;
+  } @else {
+    $border: $border $button-border-color;
+  }
+
+  @return $border;
+}
+
+
+@function baselines($value) {
+  @if $value == null {
+    $value: 1;
+  }
+  
+  @return (1.5em * $value);
+}

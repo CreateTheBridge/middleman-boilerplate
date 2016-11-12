@@ -1,25 +1,31 @@
 // Buttons
 %button {
-  padding: 0.9em 2em;
-  display: inline-block;
-  font-size: $button-font-size;
+  display:  inline-block;
+  margin:   $button-spacing;
+  padding:  $button-text-spacing;
+
+  color:       $button-color;
+  font-family: $button-font-family;
   font-weight: $button-font-weight;
-  color: $button-color;
+  font-style:  $button-font-style;
+
+  border: button-border();
+  border-radius: $button-border-radius;
   background-color: $button-background-color;
-  border: $button-border $button-border-color;
-  border-radius: $round-edges;
-  transition: background-color 300ms ease-out;
-  user-select: none;
-  cursor: pointer;
+
   outline: none;
+  cursor: pointer;
+  user-select: none;
+  transition: all 300ms linear;
+
 
   &:hover {
-    color: $button-color-hover;
-    background-color: $button-background-color-hover;
-    border: $button-border-color-hover;
+    color: $button-hover-color;
+    border: button-border($hover: true);
+    background-color: $button-hover-background-color;
   }
 }
 
-.button, input[type="submit"] {
+.button, input[type="submit"], button {
   @extend %button;
 }

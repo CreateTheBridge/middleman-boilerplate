@@ -65,6 +65,7 @@ page "/index.html", proxy: "/templates/index.html"
 sprockets.append_path 'assets/bower_components/jquery/dist'
 sprockets.append_path 'assets/bower_components/font-awesome/fonts'
 sprockets.append_path 'assets/bower_components/font-awesome/scss'
+sprockets.append_path 'assets/bower_components/codemirror'
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'

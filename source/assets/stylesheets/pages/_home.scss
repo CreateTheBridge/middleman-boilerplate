@@ -1,0 +1,51 @@
+.home-page-container {
+  @include container(100%);
+
+  section {
+    @include container(1280px);
+  }
+
+  #intro {
+    @include container(100%);
+
+    text-align: center;
+    background-color: $dark-blue;
+    padding: baselines(5) 0;
+
+    h1, h2, p {
+      color: $off-white;
+    }
+
+    .text-content {
+      @include container(1280px);
+    }
+  }
+
+  #buttons {
+    .demonstration {
+      padding-top: baselines(4.5);
+    }
+  }
+
+  .two-column-display {
+    .text-content, .demonstration {
+      padding: 1.5em;
+      box-sizing: border-box;
+    }
+
+    .text-content {
+      @include span(6);
+    }
+
+    .demonstration {
+      @include span(6 last);
+
+      p {
+        &:first-of-type {
+          margin-top: 0;
+        }
+        margin: baselines(1) 0;
+      }
+    }
+  }
+}

@@ -12,8 +12,9 @@ $red: #D24D57;
 $yellow: #f1c205;
 $orange: #f08a24;
 
+
 // Backgrounds
-$body-background-color: white;
+$body-background: $off-white;
 
 
 // Typography
@@ -41,24 +42,37 @@ $ms-small-up:   ms(1, $ms-base, $ms-small-ratio);
 $ms-0: $ms-base;
 $ms-small-down:  ms(-1);
 
-$font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+// Normal Text
+$font-color:  $medium-gray;
 $font-weight: normal;
-$font-color: $medium-gray;
-$header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$header-font-weight: normal;
-$header-font-color: $dark-gray;
+$font-style:  normal;
+$font-family: "brandon-grotesque", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+// Heading Text
+$header-font-color:   $dark-gray;
+$header-font-weight:  normal;
+$header-font-style:   normal;
+$header-font-family:  "brandon-grotesque", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 
-// Buttons
+// Buttons (Normal)
+$button-color: $dark-blue;
+$button-spacing: none;
+$button-text-spacing: 0.5em 2em;
 $button-font-size: rem-calc(14);
+$button-font-family: $font-family;
 $button-font-weight: $font-weight;
-$button-background-color: $light-green;
-$button-background-color-hover: scale_color($button-background-color, $lightness: -20%);
-$button-border: none;
-$button-border-color: none;
-$button-border-color-hover: none;
-$button-color: white;
-$button-color-hover: white;
+$button-font-style: $font-style;
+$button-border-width: rem-calc(2);
+$button-border-style: solid;
+$button-border-color: $dark-blue;
+$button-border-radius: rem-calc(5);
+$button-background-color: transparent;
+
+// Buttons (Hover)
+$button-hover-color: white;
+$button-hover-background-color: $button-color;
+$button-hover-border-color: $button-hover-background-color;
 
 
 // Links

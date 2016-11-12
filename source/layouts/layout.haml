@@ -18,11 +18,9 @@
 
 
 %body{class: page_classes}
-  .off-canvas-wrap{data: { offcanvas: ''}}
-    .inner-wrap
-      %main.main{role: 'main'}
-        = partial 'navigation'
-        = yield
-        = partial 'footer'
+  %main.main{role: 'main'}
+    -# = partial 'navigation'
+    = yield
+    -# = partial 'footer'
 
   = javascript_include_tag 'application', defer: true, async: true
